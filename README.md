@@ -85,6 +85,6 @@ Authorization: Key sdfsdlfkje23rdsfsi9fergi
 
 
 ### 일정
-- 6월 7일 23:59:59 까지 etl을 통해 제출
+- 6월 10일 23:59:59 까지 etl을 통해 제출
 - 1일 늦을시 마다 5%씩 감점.
 
