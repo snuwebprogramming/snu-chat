@@ -6,6 +6,7 @@
 주어진 채팅 서버( https://snu-chat2.herokuapp.com/ )를 이용하여, 채팅 클라이언트를 구현한다.
 서버 endpoint는 다음과 같다.
 
+### login
 :POST /login { name }
 
 -> { key, name, createdAt }
@@ -26,6 +27,7 @@
 :POST /rooms/:room_id { name }
 -> { id, name }
 
+### chatting list
 :GET /rooms/:room_id/chats { createdAtFrom, createdAtTo, order }
 
 -> [
@@ -45,10 +47,10 @@ when last message is like that, you can load more messages by sending
 
 https://snu-chat2.herokuapp.com/chats?createdAtFrom=1574940307945
 
-
+## send message
 :POST /rooms/:room_id/chats  (auth_required)
 
--> { meesage, created }
+-> { roomId, meesage, created }
 
 
 * auth_required 의 경우, /login 시 얻은 key를 http request header에 첨부하면 된다. 
