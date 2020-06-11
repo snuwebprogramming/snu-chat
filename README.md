@@ -90,6 +90,7 @@ Authorization: Key sdfsdlfkje23rdsfsi9fergi
 - 로그아웃 기능
 - 방에 채팅이 30개 이상 쌓였을 경우, 위로 스크롤 할 시에 대화 추가 로드.
 - 오프라인 모드에서 적절한 에러 핸들링
+- 채팅 입력시 enter 와 shift+enter 구분해서 핸들링(enter -> 채팅 전송. shift + enter -> 엔터입력)
 
 
 ### 일정
