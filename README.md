@@ -27,10 +27,7 @@
 :POST /rooms { name }
 -> { id, name }
 
-~~ ### join room ~~
-~~ :POST /rooms/:room_id { name } ~~
-~~ -> { id, name } ~~
-
+<del> ### join room </del>
 따로 사용하실 필요 없이, 처음 채팅을 해당방에 칠 경우 자동으로 조인이 됩니다.
 ### chatting list
 :GET /rooms/:room_id/chats { createdAtFrom, createdAtTo, order }
